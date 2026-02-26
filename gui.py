@@ -130,13 +130,13 @@ class App:
         self.start_time = time.time()
         self.timestamps = []
 
-        # إعادة تهيئة الطريقتين
+        
         self.green_method = GreenChannel()
         self.chrom_method = CHROM()
 
         self.signals = {"green": [], "chrom": []}
 
-        # ---------- حفظ الفيديو باسم مقروء ----------
+        
         os.makedirs("data/videos", exist_ok=True)
 
         ts = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
